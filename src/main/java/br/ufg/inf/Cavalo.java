@@ -12,6 +12,6 @@ public class Cavalo extends Animal {
     }
 
     public void correr() {
-        System.out.println("Cavalo correndo...");
+        System.out.println("Cavalo " + this.nome + " correndo...");
     }
 }
