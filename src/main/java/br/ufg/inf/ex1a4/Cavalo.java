@@ -1,4 +1,4 @@
-package br.ufg.inf;
+package br.ufg.inf.ex1a4;
 
 public class Cavalo extends Animal {
 

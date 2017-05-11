@@ -1,4 +1,4 @@
-package br.ufg.inf;
+package br.ufg.inf.ex1a4;
 
 import java.util.ArrayList;
 import java.util.List;
