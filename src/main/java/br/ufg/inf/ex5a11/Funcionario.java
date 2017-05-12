@@ -34,4 +34,9 @@ public abstract class Funcionario {
     public void setRendaTotal() {
         this.rendaTotal = this.rendaBasica;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + this.nome + "\n Comissão: " + this.comissao.adicionalSalario + "\n Salário total: " + this.rendaTotal;
+    }
 }

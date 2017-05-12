@@ -28,5 +28,9 @@ public class Testa {
         System.out.println("Total dos salários de nível básico: " + empresa.getTotalSalariosEnsinoBasico());
         System.out.println("Total dos salários de nível médio: " + empresa.getTotalSalariosEnsinoMedio());
         System.out.println("Total dos salários de nível superior: " + empresa.getTotalSalariosEnsinoSuperior());
+
+        for (Funcionario funcionario : empresa.funcionarios) {
+            System.out.println(funcionario);
+        }
     }
 }
