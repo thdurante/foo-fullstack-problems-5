@@ -6,11 +6,13 @@ public abstract class Funcionario {
     protected String codigoFuncional;
     protected double rendaBasica;
     protected double rendaTotal;
+    protected Comissao comissao;
 
-    public Funcionario(String nome, String codigoFuncional) {
+    public Funcionario(String nome, String codigoFuncional, Comissao comissao) {
         this.nome = nome;
         this.codigoFuncional = codigoFuncional;
         this.rendaBasica = 1000;
+        this.comissao = comissao;
     }
 
     public String getNome() {

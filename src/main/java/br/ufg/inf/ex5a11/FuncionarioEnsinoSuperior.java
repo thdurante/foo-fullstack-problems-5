@@ -4,8 +4,8 @@ public class FuncionarioEnsinoSuperior extends FuncionarioEnsinoMedio {
 
     protected String universidade;
 
-    public FuncionarioEnsinoSuperior(String nome, String codigoFuncional, String escola, String universidade) {
-        super(nome, codigoFuncional, escola);
+    public FuncionarioEnsinoSuperior(String nome, String codigoFuncional, String escola, String universidade, Comissao comissao) {
+        super(nome, codigoFuncional, escola, comissao);
         this.universidade = universidade;
     }
 
@@ -15,6 +15,6 @@ public class FuncionarioEnsinoSuperior extends FuncionarioEnsinoMedio {
 
     public void setRendaTotal() {
         super.setRendaTotal();
-        this.rendaTotal = this.rendaTotal * 2;
+        this.rendaTotal = (this.rendaTotal * 2) + this.comissao.adicionalSalario;
     }
 }
