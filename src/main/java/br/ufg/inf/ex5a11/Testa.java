@@ -6,20 +6,20 @@ public class Testa {
     public static void main(String[] args) {
         Empresa empresa = new Empresa();
 
-        for (int i = 0; i < 4; i++) {
-            FuncionarioEnsinoBasico basico = new FuncionarioEnsinoBasico("Basico" + i, i + "", "Escola" + i);
+        for (int i = 0; i < 7; i++) {
+            FuncionarioEnsinoBasico basico = new FuncionarioEnsinoBasico("Basico" + i, i + "", "Escola" + i, new ComissaoVendedor());
             basico.setRendaTotal();
             empresa.funcionarios[i] = basico;
         }
 
-        for (int i = 4; i < 8; i++) {
-            FuncionarioEnsinoMedio medio = new FuncionarioEnsinoMedio("Medio" + i, i + "", "Escola" + i);
+        for (int i = 7; i < 9; i++) {
+            FuncionarioEnsinoMedio medio = new FuncionarioEnsinoMedio("Medio" + i, i + "", "Escola" + i, new ComissaoSupervisor());
             medio.setRendaTotal();
             empresa.funcionarios[i] = medio;
         }
 
-        for (int i = 8; i < 10; i++) {
-            FuncionarioEnsinoSuperior superior = new FuncionarioEnsinoSuperior("Superior", "1", "A", "B");
+        for (int i = 9; i < 10; i++) {
+            FuncionarioEnsinoSuperior superior = new FuncionarioEnsinoSuperior("Superior", "1", "A", "B", new ComissaoGerente());
             superior.setRendaTotal();
             empresa.funcionarios[i] = superior;
         }
